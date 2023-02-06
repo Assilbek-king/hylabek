@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fd1d55b-1058-4a2d-95f7-eaebd123b2fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/landinghyla/static/snimka.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landinghyla/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/landinghyla/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landinghyla/static/wp-content/themes/novza/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/landinghyla/static/wp-content/themes/novza/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landinghyla/template/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/landinghyla/template/index.htm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

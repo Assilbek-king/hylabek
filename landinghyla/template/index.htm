@@ -287,7 +287,7 @@ HYLA очистит <br>все </div>-->
 <h1 class="intro__title">HYLA - превращает дом в <span>оздоровительный курорт</span></h1>
 <div class="intro__box">
 <div class="intro__item intro__item--1">Впрямую от производителя</div>
-<div class="intro__item intro__item--2">Гарантия 3 года</div>
+<div class="intro__item intro__item--2">Гарантия 20 года</div>
 <div class="intro__item intro__item--3">6 месяцев бесплатного сервиса</div>
 </div>
 </div>
@@ -336,7 +336,7 @@ HYLA очистит <br>все </div>-->
 	<p class="counter" style="color: #e7b118;
     font-size: 43px;
     font-weight: 800;
-    font-family: calibri;">12</p>
+    font-family: calibri;">13</p>
 	<div class="easy-buying__item-text">
 	летним опытом </div>
 	</div>
@@ -353,28 +353,30 @@ HYLA очистит <br>все </div>-->
 	</div>
 
 
+		<div class="easy-buying__item" style="margin-bottom: 18px;">
+		<div class="easy-buying__item-text" >
+	В Казахстане </div>
+	<p class="counter" style="color: #e7b118;
+    font-size: 43px;
+    font-weight: 800;
+    font-family: calibri;">8</p>
+	<div class="easy-buying__item-text">
+	филиалов </div>
+	</div>
+
 
 	<div class="easy-buying__item" style="margin-bottom: 18px;">
 		<div class="easy-buying__item-text">
-	Доставлено  более</div>
+	Более</div>
 	<p class="counter" style="color: #e7b118;
     font-size: 43px;
     font-weight: 800;
-    font-family: calibri;">1000</p>
+    font-family: calibri;">5000</p>
 	<div class="easy-buying__item-text">
-	товары </div>
+	успешных заказов </div>
 	</div>
 
-	<div class="easy-buying__item" style="margin-bottom: 18px;">
-		<div class="easy-buying__item-text" style="color:white">
-	1 </div>
-	<p class="counter" style="color: #e7b118;
-    font-size: 43px;
-    font-weight: 800;
-    font-family: calibri;">1000</p>
-	<div class="easy-buying__item-text">
-	кв.м. производственной площади </div>
-	</div>
+
 
 </div>
 
@@ -805,12 +807,18 @@ HYLA очистит все	</h2>
 <div class="swiper-wrapper">
 	{% for s in services %}
 <div class="swiper-slide">
-	<div class="easy-buying__item" >
+	<div class="easy-buying__item"  style="padding:0px;overflow:hidden;">
 	<img alt="Картинка" style="width:100%"  data-src="/media/{{ s.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/media/{{ p.logo }}" alt="Картинка"></noscript>
 		<div class="easy-buying__item-text">
 			<h3>{{ s.title }}</h3>
 
-			<p>{{ s.mini_description }}</p>
+			<p style="    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding:0px 10px;
+    margin-top:10px;
+">{{ s.mini_description }}</p>
 			</div>
 </div>
 </div>
@@ -1108,48 +1116,13 @@ HYLA очистит все	</h2>
 </div>
 <div></div>
 </div>
-</section><section class="complaints">
-<div class="complaints__content">
-<div class="complaints__left">
-<div class="complaints__img">
-<img alt="Картинка" data-src="/static/snimka.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/static/snimka.png" alt="Картинка"></noscript>
-</div>
-<div class="complaints__bottom">
-<div class="complaints__name">
-Едгорбек  </div>
-<div class="complaints__desc">
-Сооснователь компании Hyla  </div>
-</div>
-</div>
-<div class="cf7sg-container cf7sg-not-grid"><div id="cf7sg-form-shikoyat_ru" class=" key_shikoyat_ru"><div role="form" class="wpcf7" id="wpcf7-f660-o11" lang="ru-RU" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<div class="wpcf7-form init" novalidate="novalidate" data-status="init">
-
-<form action="/" method="post"  class="complaints__form form-complaints">
-	{% csrf_token %}
-<div class="form-complaints__title">Здравствуйте!</div>
-<div class="form-complaints__desc">
-Если у вас есть жалобы или предложения,<br>
-<strong>Я лично готов Вас выслушать</strong>
-</div>
-<div class="form-complaints__action">
-<span class="wpcf7-form-control-wrap" data-name="name-444">
-	<input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-complaints__input" aria-required="true" aria-invalid="false" placeholder="Ваше имя">
-</span> <span class="wpcf7-form-control-wrap" data-name="tel-555"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form-complaints__input phone-mask" aria-required="true" aria-invalid="false" placeholder="+7"></span> <span class="wpcf7-form-control-wrap" data-name="textarea-847">
-	<textarea name="comment" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-complaints__textarea" aria-required="true" aria-invalid="false" placeholder="Введите ваши жалобы и предложения"></textarea></span>
-</div>
-<p> <button type="submit" class="form-complaints__btn">Отправить</button>
-</p>
-</form>
-<p><input type="hidden" name="wpcf7tg_sending" value="1"></p>
-<div class="wpcf7-response-output" aria-hidden="true"></div></div></div></div></div> </div>
 </section>
 
-<section class="seo-text">
+<section class="seo-text" style="padding-bottom:30px">
  <div class="container"><br>
-
+<div class="our-location__title">
+ПРЕИМУЩЕСТВА И ВЫГОДЫ РАБОТЫ С КОМПАНИЕЙ ! </div>
 <br>
-	 <h2>ПРЕИМУЩЕСТВА И ВЫГОДЫ РАБОТЫ С КОМПАНИЕЙ</h2><br>
 	 	 <p>
 		 <b>Максимальный результат при минимальных затратах</b>
 		 </p><br>
@@ -1176,6 +1149,7 @@ HYLA очистит все	</h2>
  </div>
 </section>
 
+<!--
 <section class="our-location">
 <div class="container">
 <div class="our-location__title">
@@ -1185,33 +1159,34 @@ HYLA очистит все	</h2>
 </div>
 <div class="our-location__map tabs">
 <div class="our-location__map-actions">
-<!--<div class="our-location__map-action tabs__item active">
+&lt;!&ndash;<div class="our-location__map-action tabs__item active">
 пр-т. Байдибек би 91, Шымкент </div>
 <div class="our-location__map-action tabs__item">
-улица Аль-Фараби 165, Шымкент </div>-->
+улица Аль-Фараби 165, Шымкент </div>&ndash;&gt;
 <div class="our-location__map-action tabs__item active">
 город Алматы </div>
 </div>
 <div class="our-location__tabs">
-<!--
+&lt;!&ndash;
 <div class="tabs__content active">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1947.7549033879397!2d69.61787030455852!3d42.36285922891451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a91cff95a81225%3A0xa9ae7b4c91f51df3!2z0L_RgC3Rgi4g0JHQsNC50LTQuNCx0LXQuiDQsdC4IDkxLCDQqNGL0LzQutC10L3RgiAxNjAwMDA!5e0!3m2!1sru!2skz!4v1670271783551!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <div class="tabs__content">
 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2949.1295261452824!2d69.72086176477457!3d42.310705553994154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JPQvtC30LDRhdCw0L0!5e0!3m2!1sru!2skz!4v1670272081680!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
--->
+&ndash;&gt;
 <div class="tabs__content active">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1360.2933229239957!2d76.83481830867508!3d43.2112752106869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836855322670c3%3A0x3d2c45eb6f3e266a!2z0YPQu9C40YbQsCDQqNCw0LvRj9C_0LjQvdCwLCDQkNC70LzQsNGC0Ys!5e0!3m2!1sru!2skz!4v1670524446435!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
 </div>
 </div>
 </section></main>
+-->
 
 <footer class="footer">
 <div class="container">
 <div class="footer__bottom">
 <div class="footer__col">
 <img alt="Картинка" data-src="/static/wp-content/themes/novza/assets/img/time.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/static/wp-content/themes/novza/assets/img/time.png" alt="Картинка"></noscript>
-<span>Каждый день с 9:00 до 19:00</span>
+<span>Каждый день с 10:00 до 19:00</span>
 </div>
 <div style="display:flex">
 <a target="_blank" href="#" class="footer__social-item" style="margin-right:10px">
