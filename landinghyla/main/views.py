@@ -9,6 +9,7 @@ def indexHandler(request):
     feeds = Feedback.objects.all()
     otzivs = Otziv.objects.all()
     services = Service.objects.all()
+    partners = Partner.objects.all()
 
     if request.POST:
         feed = Feedback()
@@ -28,6 +29,7 @@ def indexHandler(request):
         'feeds': feeds,
         'otzivs': otzivs,
         'services': services,
+        'partners': partners,
     })
 
 

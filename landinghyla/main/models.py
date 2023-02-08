@@ -33,6 +33,14 @@ class Photo(models.Model):
         return f'{self.logo}'
 
 
+class Partner(models.Model):
+    logo = models.ImageField(upload_to='upload', blank=True)
+    title = models.CharField(max_length=300, blank=True)
+
+    def __str__(self):
+        return f'{self.logo}'
+
+
 class Feedback(models.Model):
     name = models.CharField(max_length=300, blank=True)
     phone = models.CharField(max_length=15, blank=True)

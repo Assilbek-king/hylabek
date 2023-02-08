@@ -802,24 +802,28 @@ HYLA очистит все	</h2>
 </section>
 
 
+	<section class="reviews " >
+		<h2 class="title reviews__title">
+Наши партнеры	</h2>
+	<div class="container">
 
-	<section class="reviews asdf" >
-	<div class="circle-ripple"></div>
+		<div class="swiper examples__swiper">
+<div class="swiper-wrapper">
+	{% for s in partners %}
+<div class="swiper-slide">
 
-	<style>
+	<img alt="Картинка" style="width:100%"  data-src="/media/{{ s.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/media/{{ p.logo }}" alt="Картинка"></noscript>
 
-		.asdf {
-		background-image: url(/static/hylafon.jpg);
-		background-size:100%;
-		background-repeat:no-repeat;
-		height:430px;
-		}
-		@media only screen and (max-width: 600px) {
-		  .asdf {
-		display:none;
-		}
-		}
-	</style>
+
+</div>
+	{% endfor %}
+</div>
+<div class="swiper-pagination"></div>
+
+</div>
+<div class="swiper-button-next swiper-button-next-reviews"></div>
+<div class="swiper-button-prev swiper-button-prev-reviews"></div>
+	</div>
 </section>
 <!--	<section class="encountered-issues">-->
 <!--<div class="encountered-issues__title title">-->
