@@ -460,14 +460,14 @@ HYLA очистит <br>все </div>-->
 
 </div>
 <div class="items-our-products__contents">
-	{% for cat in cats %}
-<div class="tabs__content {% if cat.id == 1 %} active {% endif %} " >
+<div class="tabs__content active" >
 	{% for pr in tovars %}
-	{% if pr.cat.id == cat.id %}
+
 <article class="our-products__item item-our-product ">
 <a href="#door{{ pr.id }}" class="item-our-product__img popup-link">
 <img alt=" Картинка" data-src="/media/{{ pr.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
 </a>
+	<h1 style="text-align:center;text-transform: uppercase;padding-top:10px;    color: #e7b118;">{{ pr.title }}</h1>
 <a href="#door" class="item-our-product__link popup-link">
 Заказать </a>
 
@@ -475,7 +475,7 @@ HYLA очистит <br>все </div>-->
 
 	<div id="door{{ pr.id }}" class="popup" >
 <div class="popup__body" >
-<div class="popup__content" style="padding:0" >
+<div class="popup__content" style="padding:0;    background: none;" >
 <button class="popup__close close-popup">
 <img alt="icon" data-src="/static/wp-content/themes/novza/assets/img/svg/close.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="icon" data-src="/static/wp-content/themes/novza/assets/img/svg/close.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img alt="icon" data-src="/static/wp-content/themes/novza/assets/img/svg/close.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/static/wp-content/themes/novza/assets/img/svg/close.svg" alt="icon"></noscript></noscript></noscript>
 </button>
@@ -483,12 +483,32 @@ HYLA очистит <br>все </div>-->
 
 
 	<div class="priority__swiper swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-				<div class="swiper-wrapper" id="swiper-wrapper-bbec4b261e172cc0" aria-live="polite" style="transform: translate3d(-552px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="6" style="width: 552px;" role="group" aria-label="7 / 7">
-					<div class=""></div>
 
 
 
-				</div>
+							<div class="easy-buying__item" style="width: 100%;margin:0px 0px;">
+							<img alt="Картинка" data-src="/media/{{ pr.logo }}" style="width:50%" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript>
+								<img src="/media/{{ pr.logo }}" alt="Картинка" style="width: 50%"></noscript>
+							<div class="easy-buying__item-text">
+								<h1>{{ pr.title }}</h1>
+							<p style="    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-top:10px;">{{ pr.description }}</p>.
+								<a href="#door" class="item-our-product__link popup-link">
+Заказать </a>
+							</div>
+
+							</div>
+
+
+
+
+
+
+
+
 
 	</div>
 
@@ -506,10 +526,8 @@ HYLA очистит <br>все </div>-->
 
 
 </article>
-	{% endif %}
 	{% endfor %}
 </div>
-	{% endfor %}
 </div>
 
 
@@ -801,7 +819,22 @@ HYLA очистит все	</h2>
 </div>
 </section>
 
+<section class="use-best">
+<div class="container">
+<div class="use-best__left">
+<div class="use-best__logo">
+<img alt="Картинка" data-src="/static/techno.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/static/wp-content/themes/novza/assets/img/site-logo.png" alt="Картинка"></noscript>
+</div>
 
+</div>
+<div class="use-best__right">
+<div class="use-best__title">
+Наши партнеры<span>Официальным партнёром компании Hyla является  "TechnoDom"  </span> </div>
+
+</div>
+</div>
+</section>
+	<!--
 	<section class="reviews " >
 		<h2 class="title reviews__title">
 Наши партнеры	</h2>
@@ -824,7 +857,7 @@ HYLA очистит все	</h2>
 <div class="swiper-button-next swiper-button-next-reviews"></div>
 <div class="swiper-button-prev swiper-button-prev-reviews"></div>
 	</div>
-</section>
+</section>-->
 <!--	<section class="encountered-issues">-->
 <!--<div class="encountered-issues__title title">-->
 <!--Если вы сделаете ошибку в выборе <br> вы можете столкнуться со следующими <span>проблемами:</span> </div>-->
@@ -979,7 +1012,11 @@ HYLA очистит все	</h2>
 		<div class="easy-buying__item-text">
 			<h3>{{ p.title }}</h3>
 
-			<p>{{ p.description }}</p>
+			<p style="    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-top:10px;">{{ p.description }}</p>
 			</div>
 </div>
 </div>

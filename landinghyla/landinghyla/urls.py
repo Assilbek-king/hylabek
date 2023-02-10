@@ -23,7 +23,6 @@ from main.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', indexHandler),
-    path('kz', indexkzHandler),
 
     url(r'^media/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT
